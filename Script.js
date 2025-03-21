@@ -26,10 +26,7 @@ gsap.to(".planet-container", {
     ease: "linear"
 });
 
-gsap.from(".rec",{
-    x:2000,
-    duration:5,
-})
+
 gsap.from(".card", {
     duration: 1.2,
     y: 50,
