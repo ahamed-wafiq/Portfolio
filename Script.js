@@ -6,7 +6,6 @@ gsap.from(".nav-bar", {
     opacity: 0,
     ease: "bounce"
 });
-
 gsap.from(".nav", {
     duration: 1,
     opacity: 0,
