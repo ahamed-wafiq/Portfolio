@@ -35,7 +35,7 @@ html{
     color: #bf0603;
 }
 h1 {
-    width:57.14%;
+    width: 800px;
     font-size: 4rem;
     margin: 0;
     color: #f39c12;
@@ -176,7 +176,7 @@ h7{
 }
 .section{
     height:600px;
-    width:100%;
+    width:1400px;
    
     object-fit: cover;
 
@@ -196,14 +196,14 @@ h7{
 }
 .about{
     height:400px;
-    width:57%;
+    width:800px;
     align-items: center;
     flex-wrap: wrap;
 
 }
 
 .card {
-    width:42.8%;
+    width:600px;
     height: 270px;
     background: #07182E;
     position: relative;
@@ -226,7 +226,7 @@ h7{
     .card::before {
     content: '';
     position: absolute;
-    width: 7.1%;
+    width: 100px;
     background-image: linear-gradient(180deg,#dc0d0a, #17d485);
     height: 300%;
     animation: rotBGimg 3s linear infinite;
@@ -255,7 +255,7 @@ h7{
         }  
 .photo{
     height:400px;
-    width:57%;
+    width:800px;
     align-items: center;
     white-space: nowrap;
     overflow-x: auto;
@@ -265,7 +265,7 @@ h7{
     display: none;
 } 
 .ui{
-    width:30.7%;
+    width:430px;
     height: 370px;
     background-color: #f4d58d;
     align-content: center;
@@ -274,7 +274,7 @@ h7{
     display: inline-block;
 }
 .ui img{
-    width:28.57%;
+    width:400px;
     height: 350px;
     border-radius: 20px;
     object-fit: cover;
@@ -293,7 +293,7 @@ h7{
 }
 .skill-btn{
     height: 100px;
-    width:10.7%;
+    width:150px;
     border-radius: 100px;
     justify-content:space-between;
     background-color:transparent;
@@ -304,7 +304,7 @@ h7{
 }
 .skill-btn img{
     height: 100px;
-    width:10.7%;
+    width:150px;
     border-radius: 100px;
     object-fit: cover;
 }
@@ -328,13 +328,13 @@ h4{
     padding: 2rem;
     height: 500px;
     border-radius: 12px;
-    max-width:64.28%;
+    max-width:900px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 img{
     height: 410px;
-    width: 64.28%;
+    width: 900px;
     border-radius: 15px;
     object-fit: cover;
    
@@ -355,7 +355,7 @@ img{
 }
 .cont{
     height:100px;
-    width:14.28%;
+    width:200px;
     border-radius: 10px;
     background-color: #f4d58d;
     border: none;
@@ -386,5 +386,8 @@ footer p {
     text-align: center;
     transition: background-color 1s ease;
 }
+
+
+
 
 
