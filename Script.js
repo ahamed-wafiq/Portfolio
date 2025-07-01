@@ -6,6 +6,7 @@ gsap.from(".nav-bar", {
     opacity: 0,
     ease: "bounce"
 });
+
 gsap.from(".nav", {
     duration: 1,
     opacity: 0,
@@ -16,7 +17,14 @@ const logo=document.querySelectorAll("#logo path");
 for(let i=0; i<logo.length;i++){
     console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 }
-
+function showSidebar(){
+    const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display='flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display='none'
+}
 gsap.to(".planet-container", {
     rotationY: 360,
     rotationX:360,
@@ -41,14 +49,7 @@ gsap.from("footer", {
     y: 20,
     ease: "power1.out"
 });
-function showSidebar(){
-    const sidebar = document.querySelector('.side-bar')
-    sidebar.style.display='flex'
-}
-function hideSidebar(){
-    const sidebar = document.querySelector('.side-bar')
-    sidebar.style.display='none'
-}
+
 gsap.utils.toArray(".section1").forEach((section, i) => {
     const colors = ["#1a1a2e", "#16213e", "#0f3460", "#53354a"];
     gsap.to(section, {
@@ -61,6 +62,7 @@ gsap.utils.toArray(".section1").forEach((section, i) => {
         }
     });
 });
+
 gsap.utils.toArray(".section2").forEach((section, i) => {
     const colors = ["#1a1a2e", "#16213e", "#0f3460", "#53354a"];
     gsap.to(section, {
