@@ -10,7 +10,7 @@ html{
 }
 .nav-bar{
     background: #050a38; 
-    
+    width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     display: flex;
@@ -35,16 +35,101 @@ html{
     color: #bf0603;
 }
 h1 {
-    width: 800px;
-    font-size: 4rem;
+    width:40%;
+    font-size: 5vw;
     margin: 0;
     color: #f39c12;
 }
-.section{
-    height:350px;
+.phonelogo{
+    height:50px;
+    width:20%;
+    display: none;
+    
 }
-h7{
+.fit-picture{
+    width:12vw;
+    height:9vw;
+    border: none;
+    
+    background-size: cover;
+    background-color: #050a3800;
+     transition: transform 0.3s; 
+}
+.fit-picture:hover{
+    transform:scale(1.2);
+    
+}
+.fit-picture2{
+    width:12vw;
+    height:9vw;
+    border: none;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0) ;
+     transition: transform 0.3s;
+}
+.side-bar{
+    position:fixed;
+    top: -15px;;
+    right:0;
+    height:50vh;
+    width:150px;
+    text-decoration: none;
+    z-index:100000;
+    display: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.208);
+    border-radius: 10px;
+    flex-direction:column;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+
+.side-bar li{
+    width: 100%;
+  
+}
+.side-bar a{
+    width:100%;
+    color: #f39c12;
+    text-decoration:none;
+    font-weight: 700;
+    transition: transform 0.3s;
+    
     font-size: large;
+}
+.side-bar a:hover{
+    
+    color: #bf0603;
+}
+@media(max-width:650px){
+    .btn{
+        display:none;
+    }
+    .phonelogo{
+        display:inline-block;
+        display:flex;
+        justify-content: flex-end;
+    }
+    .nav-bar{
+        height:15px;
+    }
+    
+    
+    .moon{
+        height:40vw;
+        width:40vw;
+        position: relative;
+    }
+    .section1{
+        
+        flex-wrap: wrap;
+    }
+}
+
+h7{
+    font-size:2vw;
 }
 .rec{
     height: 20px;
@@ -55,6 +140,8 @@ h7{
     position:absolute;
     top:70%;
     left:50%;
+    width:82.7083332804vw;
+    height: 8.2638888836vw;
     transform:translate(-50%,-50%);
     animation: fill 0.5s ease forwards 4s;
 }
@@ -139,10 +226,10 @@ h7{
 }
 
 .moon{
-    height:22vh;
-    width:22vh;
-    position: absolute;
-    top:35%;
+    height:16vw;
+    width:16vw;
+    position: relative;
+    top:-80%;
     left:70%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
@@ -176,7 +263,7 @@ h7{
 }
 .section{
     height:600px;
-    width:100%;!important
+    width:100%;
    
     object-fit: cover;
 
@@ -184,7 +271,7 @@ h7{
  } 
 .section img{
     height:600px;
-    width:100%;!important
+    width:100%;
     object-fit: cover;
 }
 .section1{
@@ -192,19 +279,40 @@ h7{
     text-align: center;
     transition: background-color 1s ease;
     display: flex;
+    padding-top: -30px;
+    padding-bottom: 20px;
+    /* padding-left: 10px; */
+    /* flex-wrap: wrap; */
     align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width:100%;
 }
+
 .about{
-    height:400px;
-    width:800px;
-    align-items: center;
+    height:300px;
+    width:70vw;
+    
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
     flex-wrap: wrap;
 
 }
+.proto{
+     height:300px;
+    width:70vw;
+   
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
 
+}
 .card {
-    width:600px;
-    height: 270px;
+    width:50vw;
+    height:30vw;
+    align-items: center;
     background: #07182E;
     position: relative;
     padding:10px;
@@ -217,10 +325,12 @@ h7{
     
     .card h2 {
     color: white;
+    font-size:1vw;
+    width:40%;
     }
     .card p{
         z-index: 1;
-        font-size: large;
+        font-size: 2vw;
         color: black;  
     }
     .card::before {
@@ -254,8 +364,8 @@ h7{
         border-radius: 15px;
         }  
 .photo{
-    height:400px;
-    width:800px;
+    height:35vw;
+    width:45vw;
     align-items: center;
     white-space: nowrap;
     overflow-x: auto;
@@ -264,9 +374,10 @@ h7{
 .photo::-webkit-scrollbar{
     display: none;
 } 
+
 .ui{
-    width:430px;
-    height: 370px;
+    width:42vw;
+    height:32vw;
     background-color: #f4d58d;
     align-content: center;
     margin:10px;
@@ -274,12 +385,40 @@ h7{
     display: inline-block;
 }
 .ui img{
-    width:400px;
-    height: 350px;
+    width:40vw;
+    height: 30vw;
     border-radius: 20px;
     object-fit: cover;
 }
-
+@media(max-width:650px){
+    .photo{
+         height:60vw;
+         width:75vw;
+    }
+    .ui{
+        width:72vw;
+        height:57vw;
+    }
+    .ui img{
+        width:70vw;
+        height:55vw;
+    }
+    .card {
+        width:70vw;
+        height:40vw;
+    }
+    .card p{
+        z-index: 1;
+        font-size: 3vw;
+        color: black;  
+    }
+    .section1{
+        height: 700px;
+    }
+    h7{
+        font-size: 3vw;
+    }
+}
 .section2{
     padding: 6rem 2rem;
     text-align: center;
@@ -287,13 +426,13 @@ h7{
 }
 .section3{
     text-align: center;
-    height: 300px;
+    height:30vw;
     justify-content:space-between;
     
 }
 .skill-btn{
-    height: 100px;
-    width:150px;
+    height:11vw;
+    width:15vw;
     border-radius: 100px;
     justify-content:space-between;
     background-color:transparent;
@@ -303,19 +442,15 @@ h7{
     
 }
 .skill-btn img{
-    height: 100px;
-    width:150px;
+    height: 11vw;
+    width:15vw;
     border-radius: 100px;
     object-fit: cover;
 }
 .skill-btn:hover{
     transform: scale(1.1);
 }
-h2{
-    font-size: 2rem;
-    font-weight: bolder;
-    width:500px;
-}
+
 h4{
     font-size: 2rem;
     font-weight: bolder;
@@ -326,15 +461,20 @@ h4{
     background: #708d81;
     margin: 1rem auto;
     padding: 2rem;
-    height: 500px;
+    height: 50vw;
     border-radius: 12px;
-    width:900px;
+    width:72vw;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    justify-content: space-evenly;
+    transition:transform 0.3s ;
+}
+.card2:hover{
+     transform: scale(1.1);
 }
 img{
-    height: 410px;
-    width: 900px;
+    height: 40vw;
+    width:71vw;
     border-radius: 15px;
     object-fit: cover;
    
@@ -361,6 +501,11 @@ img{
     border: none;
     font-size: larger;
     font-weight: 900;
+    transition: transform 0.3s; ;
+}
+.cont:hover{
+    transform: scale(1.1);
+    color: #bf0603;
 }
 
 footer {
@@ -386,6 +531,15 @@ footer p {
     text-align: center;
     transition: background-color 1s ease;
 }
+
+        
+
+
+   
+
+   
+
+
 
 
 
