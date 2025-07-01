@@ -41,7 +41,14 @@ gsap.from("footer", {
     y: 20,
     ease: "power1.out"
 });
-
+function showSidebar(){
+    const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display='flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display='none'
+}
 gsap.utils.toArray(".section1").forEach((section, i) => {
     const colors = ["#1a1a2e", "#16213e", "#0f3460", "#53354a"];
     gsap.to(section, {
