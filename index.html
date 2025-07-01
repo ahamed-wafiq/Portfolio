@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
   
 
@@ -11,19 +12,26 @@
 </head>
 <body>
     
-    <div class="nav-bar">
+    <div class="nav-bar"> 
             <h1>Ahamed Wafiq</h1>
+            
             <a href="#ab"><button class="btn">About me</button></a>
             <a href="#pr"><button class="btn">Projects</button></a>
             <a href="#sk"><button class="btn">Skills</button></a>
+            <div class="phonelogo"><button class="fit-picture" onclick=showSidebar()><i class="fa-solid fa-bars fa-2xl" style="color: #f39c12;"></i></button></div>
     </div>
-    
+    <ul class="side-bar">
+                <li><button class="fit-picture2" onclick=hideSidebar()><i class="fa-solid fa-plus fa-rotate-by fa-2xl" style="color: #f39c12; --fa-rotate-angle: 45deg;"></i></button></li>
+                <li><a href="#ab">About me</a></li>
+                <li><a href="#pr">Projects</a></li>
+                <li><a href="#sk">Skills</a></li>
+            </ul>
     <div class="section">
         <img src="intro4.jpg">
         <div class="moon">
                 
         </div>
-    <svg id="logo" width="85.07%" height="119" viewBox="0 0 1191 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id="logo" viewBox="0 0 1191 119" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1104.14 112V114.5H1106.64H1119.32H1121.82V112V73.5909H1142.23C1142.63 73.5909 1143.03 73.5877 1143.42 73.5813L1164.78 113.186L1165.48 114.5H1166.98H1181.7H1185.92L1183.9 110.799L1161.61 70.1124C1162.21 69.848 1162.79 69.5681 1163.37 69.2725L1163.37 69.2725L1163.38 69.2666C1169 66.327 1173.26 62.2302 1176.04 56.9694C1178.78 51.7881 1180.11 45.9053 1180.11 39.3864C1180.11 32.8667 1178.78 26.9559 1176.05 21.714C1173.27 16.3841 1169 12.2329 1163.34 9.25633C1157.62 6.21163 1150.46 4.77274 1142.02 4.77274H1106.64H1104.14V7.27274V112ZM1141.82 57.1364H1121.82V21.0227H1141.61C1147.05 21.0227 1151.17 21.8631 1154.14 23.3623L1154.15 23.3668L1154.16 23.3712C1157.16 24.8587 1159.25 26.9077 1160.55 29.5101C1161.91 32.2377 1162.64 35.506 1162.64 39.3864C1162.64 43.2698 1161.91 46.472 1160.56 49.0794L1160.56 49.0891C1159.31 51.5356 1157.26 53.4911 1154.24 54.9238L1154.24 54.928C1151.29 56.3437 1147.2 57.1364 1141.82 57.1364Z" stroke="#FBF4F4" stroke-width="5"/>
         <path d="M1018.07 112V114.5H1020.57H1084.6H1087.1V112V100.75V98.25H1084.6H1035.75V67.6591H1080.5H1083V65.1591V53.9091V51.4091H1080.5H1035.75V21.0227H1083.78H1086.28V18.5227V7.27274V4.77274H1083.78H1020.57H1018.07V7.27274V112Z" stroke="#FBF4F4" stroke-width="5"/>
         <path d="M924.135 112V114.5H926.635H939.317H941.817V112V78.996L952.241 67.2691L986.815 113.497L987.565 114.5H988.817H1004.16H1009.22L1006.14 110.481L963.449 54.6804L1005.99 8.97599L1009.9 4.77274H1004.16H987.59H986.481L985.736 5.59469L941.817 54.0971V7.27274V4.77274H939.317H926.635H924.135V7.27274V112Z" stroke="#FBF4F4" stroke-width="5"/>
@@ -57,13 +65,13 @@
               through beautifully crafted websites.</p>
         </div>
         </div>
+        <div class="proto">
         <h7>"Here are some of my UI design creations!"</h7>
         <div class="photo">
-           
+            
             <div class="ui">
                 <img src="uimg1.png">
             </div>
-            
             <div class="ui">
                 <img src="uimg2.png">
             </div>
@@ -71,31 +79,36 @@
                 <img src="uimg3.png">
             </div>
         </div>
+        </div>
     </div>
+   
     <div id="pr" class="section2">
         <h3>Projects</h3>
+        <div class="card2">
+            <h3>Amazon clone</h3>
+            <div class="img1">
+                <a href="https://ahamed-wafiq.github.io/Amazon-clone/"><img src="img2.png"></a>
+            </div>
+            
+        </div>
         <div class="card2">
             <h3>Inventory Management Web </h3>
             <div class="img1">
                 <img src="img1.jpg">
             </div>
-        </div>
-        <div class="card2">
-            <h3>Amazon clone</h3>
-            <div class="img1">
-                <img src="img2.png">
-            </div>
+            
         </div>
         <div class="card2">
             <h3>TIC-TAC-TOE game</h3>
             <div class="img1">
-                <img src="img3.png">
+                <a href="https://ahamed-wafiq.github.io/TIC-TAC-TOE-GAME/"><img src="img3.png"></a>
             </div>
             <button>
 
             </button>
         </div>
     </div>
+    
     <div id="sk" class="section3">
         <h4>Skills</h4>
         <div>
@@ -136,6 +149,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-    <script src="Script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
+
+  
+ 
+  
